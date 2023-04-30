@@ -18,12 +18,13 @@ module.exports = {
   COOKIE_SECRET: process.env.COOKIE_SECRET || 'ProyectoFinal',
   DATABASE: process.env.DATABASE || 'ProyectoFinal',
   ADMIN_EMAIL: process.env.ADMIN_EMAIL,
-  DB_URL: 'mongodb+srv://coder_c20:CONTRASEÑA@cluster0.qm7sph7.mongodb.net/DesafioCapas?retryWrites=true&w=majority',
+  DB_URL: process.env.DB_URL,
+  //DB_URL: 'mongodb+srv://coder_c20:CONTRASEÑA@cluster0.qm7sph7.mongodb.net/DesafioCapas?retryWrites=true&w=majority',
 
 
   
   mongodb: {
     connectTo: (database) =>
-    'mongodb+srv://coder_c20:CONTRASEÑA@cluster0.qm7sph7.mongodb.net/DesafioCapas?retryWrites=true&w=majority'
+    process.env.DB_URL
   },
 }

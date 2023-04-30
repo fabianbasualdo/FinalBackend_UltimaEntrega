@@ -1,11 +1,11 @@
 # CONFIGURACIONES:
 # archivo llamAdo config.js:
 
-ruta de conexion a mongo:
+aqui se encuentra la conexion a mongo.
 
 
-DB_URL: colocar tu conexion a Mongo
-connectTo: (database) => colocar tu conexion a mongo
+# configurar .env
+DB_URL = esta es la conexion a mongo que utilizo en el archivo config.js
 
 
 # archivo de la ruta utils/nodemailer.js:
@@ -21,8 +21,10 @@ const transporter = nodemailer.createTransport({
 
 # archivo llamado .env:
 
-ADMIN_PHONE: colocar tu telefono personal el cual utilizara el archivo utils/whatsapp.js
 
+DB_URL = esta es la conexion a mongo que utilizo en el archivo config.js
+
+ADMIN_PHONE: colocar tu telefono personal el cual utilizara el archivo utils/whatsapp.js
 
 NODE_ENV=development
 HOST=localhost
